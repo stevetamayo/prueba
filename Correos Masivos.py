@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 # Ruta del archivo Excel
-ruta_excel = 'C:\Users\stamayo\Documents\Paz y Salvo\Correo Masivo.xlsx'  # <-- Modifica esta ruta
+ruta_excel = r'C:\Users\stamayo\Documents\Paz y Salvo\Correo masivo.xlsm'  # <-- Modifica esta ruta
 
 # Leer archivo
 df = pd.read_excel(ruta_excel)
@@ -39,7 +39,7 @@ for index, row in df.iterrows():
         mail.Attachments.Add(adjunto)
 
         # *** Cambiar remitente ***
-        mail.SentOnBehalfOfName = "info@yamahamotor-financiera.com.co"
+        mail.SentOnBehalfOfName = "stamayo@yamahamotor-financiera.com.co"
 
         mail.Send()
         # mail.Display()  # <-- Descomenta si quieres revisar antes de enviar
