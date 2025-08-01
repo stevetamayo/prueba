@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 # Ruta del archivo Excel
-ruta_excel = r'C:\Users\stamayo\Documents\Paz y Salvo\Correo masivo.xlsm'  # <-- Modifica esta ruta
+ruta_excel = r'C:\Users\stamayo\Documents\Paz y Salvo\Correo masivo.xlsx'  # <-- Modifica esta ruta
 
 # Leer archivo
 df = pd.read_excel(ruta_excel)
